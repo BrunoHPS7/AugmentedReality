@@ -114,7 +114,7 @@ Distributed under the [Choose a License, e.g., MIT License]. See `LICENSE.txt` f
 
 ## Contact
 
-Your Name - Darlan Nunes de Brito (Optional)
+Your Name - Darlan Nunes de Brito, Bruno Henrique de Paula Silva (Optional)
 Your Email - your.email@example.com (Optional, but good for collaboration)
 
 Project Link: [https://github.com/YourUsername/Augmented-Reality-to-Work-with-Augmented-Reality](https://github.com/YourUsername/Augmented-Reality-to-Work-with-Augmented-Reality)
