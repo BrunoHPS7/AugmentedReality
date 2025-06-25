@@ -10,15 +10,15 @@ if __name__ == "__main__":
         print("Running on Linux")
     else:
         print(f"Running on unknown OS: {platform.system()}")
-    #markImageName = './Images/FiducialMarkA4DifferentIDsSmall.png'
-    #sourceImageName = './Images/eu.jpg'
-    #corners, ids, rejectedImgPoints = getFiducialLocation(markImageName)
-    #PutImagesOnMarks(ids, corners, sourceImageName, markImageName)
+    markImageName = './Images/FiducialMarkA4DifferentIDsSmall.png'
+    sourceImageName = './Images/eu.jpg'
+    corners, ids, rejectedImgPoints = getFiducialLocation(markImageName)
+    PutImagesOnMarks(ids, corners, sourceImageName, markImageName)
 
       # Parâmetros para calibração
     video_path = './videos/teste.mp4'  # ajuste o caminho para seu vídeo
-    chessboard_size = (22, 15)  # tamanho do tabuleiro (número de cantos internos)
-    square_size = 1.0  # tamanho do quadrado, em mm ou unidades que você usar
+    chessboard_size = (22, 15)  # tamanho do tabuleiro (número de cantos internos) / Passaremos usar o (8,6) após inserção de fotos
+    square_size = 25.0  # tamanho do quadrado, em mm ou unidades que você usar
 
     resultado = calibrate_camera_from_video(video_path, chessboard_size, square_size)
 

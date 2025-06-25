@@ -45,7 +45,7 @@ def calibrate_camera_from_video(video_path, chessboard_size, square_size):
     
     # -Frames/s
     fps = cap.get(cv2.CAP_PROP_FPS)
-    max_seconds = 5
+    max_seconds = 4
     max_frames = int(fps * max_seconds)
 
     frame_count = 0
@@ -65,7 +65,6 @@ def calibrate_camera_from_video(video_path, chessboard_size, square_size):
         # If found, add object points, image points (after refining them)
         if ret == True:
             objpoints.append(objp)
-
             corners2 = cv2.cornerSubPix(gray, corners, (11,11), (-1,-1), criteria)
             imgpoints.append(corners2)
 
